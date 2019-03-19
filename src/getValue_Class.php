@@ -12,15 +12,33 @@
             $this->email = $email;
         }
 
-        public function getInput(){
-            return "<p>Name:<span>".$this->name."</span></p>".
-                    "<p>Gender:<span>".$this->gender."</span></p>".
-                    "<p>Province:<span>".$this->province."</span></p>".
-                    "<p>Email:<span>".$this->email."</span></p>";
+        public function getName(){
+            return $this->name;
         }
-
-        public function getValue(){
-            $this->getInput();
+        public function getGender(){
+            return $this->gender;
+        }
+        public function getProvince(){
+            return $this->province;
+        }
+        public function getEmail(){
+            return $this->email;
+        }
+        public function getValueName(){
+            $getName = $this->getName();
+            return $getName;
+        }
+        public function getValueGender(){
+            $getGender = $this->getValueGender();
+            return $getGender;
+        }
+        public function getValueProvince(){
+            $getProvince = $this->getProvince();
+            return $getProvince;
+        }
+        public function getValueEmail(){
+            $getEmail = $this->getValueEmail();
+            return $getEmail;
         }
     }
 ?>

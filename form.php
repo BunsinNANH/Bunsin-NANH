@@ -26,7 +26,9 @@
                                 <label for="email">Email</label>
                                 <input type="text" required name="email" id="email" class="form-control">
                             </div>
-                            <button type="button" class="btn btn-success" name="btn-send" id="btn-send">Send</button>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-success float-right" name="btn-send" id="btn-send">Send Value</button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -34,9 +36,14 @@
             <div class="col-6">
                 <div class="card">
                     <div class="card-body">
-                        <div id="ouputValue"> 
-                            <?php include "getValue.php";?>
-                        </div>
+                    <br>
+                       <p><strong> Name:</strong><?php echo $student->getValueName();?></p>
+                    <br><br>
+                       <p><strong> Gender:</strong><?php echo $student->getValueName();?></p>
+                    <br><br>
+                       <p><strong> Province:</strong><?php echo $student->getValueName();?></p>
+                    <br><br>
+                       <p><strong> Email:</strong><?php echo $student->getValueName();?></p>
                     </div>
                 </div>
             </div>

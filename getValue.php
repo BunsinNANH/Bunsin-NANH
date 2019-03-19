@@ -8,5 +8,6 @@ if(isset($_POST['btn-send'])) {
     $email = $_POST['email'];
 
     $student = new GetValue($name,$gender,$province,$email);
-    echo $student->getValue();    
+    echo $student->getValueName();
+      
 }
